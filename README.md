@@ -249,3 +249,19 @@ python-dotenv
 - Similarity threshold `0.45` — turunkan jika chatbot terlalu sering menolak, naikkan jika jawaban kurang relevan
 
 ---
+
+## Tampilan & Dokumentasi
+
+Berikut adalah beberapa tampilan antarmuka dan dashboard dari sistem Portfolio Chatbot yang berjalan di lingkungan production:
+
+### 1. Antarmuka Chatbot (Streamlit UI)
+
+_Chatbot yang di-embed menggunakan iframe pada website portofolio utama, lengkap dengan fitur streaming response dan pembatasan context (Out-of-Scope Guard)._
+
+![Streamlit Chatbot UI](docs/screenshots/streamlit-ui.png)
+
+### 2. Dashboard Qdrant Vector DB (Self-hosted)
+
+_Koleksi vektor `portfolio` yang menyimpan text chunks hasil indexing dokumen `portfolio.html` beserta koordinat embedding-nya._
+
+![Qdrant Dashboard](docs/screenshots/qdrant-dashboard.png)
