@@ -1,0 +1,86 @@
+# ==========================================
+# File Spesifik Proyek Anda
+# ==========================================
+portofolio.html
+.streamlit/secrets.toml
+venv/
+__pycache__/
+
+# ==========================================
+# Python Standar & Byte-compiled
+# ==========================================
+*.pyc
+*.pyo
+*.pyd
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# Virtual Environments (Variasi nama lain)
+# ==========================================
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Pengujian (Testing) & Dokumentasi
+# ==========================================
+.pytest_cache/
+.tox/
+.noscript/
+.coverage
+.coverage.*
+htmlcov/
+docs/_build/
+
+# ==========================================
+# Environment Variables & Kredensial (Sangat Penting!)
+# ==========================================
+.env
+*.env
+.flaskenv
+secrets.json
+credentials.json
+
+# ==========================================
+# Data & Database Lokal
+# ==========================================
+*.db
+*.sqlite3
+*.log
+data/
+
+# ==========================================
+# IDE / Text Editor (VS Code, PyCharm, dll)
+# ==========================================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# ==========================================
+# Jupyter Notebook
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# Sistem Operasi (OS Specific)
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini

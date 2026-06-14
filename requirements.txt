@@ -1,0 +1,7 @@
+streamlit
+groq
+google-genai
+beautifulsoup4
+langchain
+langchain-text-splitters
+requests
