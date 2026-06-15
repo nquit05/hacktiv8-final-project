@@ -1,6 +1,9 @@
-import streamlit as st
+import os,streamlit as st
 from groq import Groq
 from retriever import get_retriever
+from dotenv import load_dotenv
+
+load_dotenv()   
 
 st.set_page_config(page_title="Chat — Michael Araona", page_icon="💬")
 
@@ -13,11 +16,11 @@ Jawab singkat, ramah, profesional. Gunakan bahasa yang sama dengan pertanyaan.""
 
 @st.cache_resource
 def load_dependencies():
-    groq     = Groq(api_key=st.secrets["GROQ_API_KEY"])
+    groq     = Groq(api_key=os.environ.get("GROQ_API_KEY"))
     retrieve = get_retriever(
-        google_api_key=st.secrets["GOOGLE_API_KEY"],
-        qdrant_url=st.secrets["QDRANT_URL"],
-        qdrant_api_key=st.secrets["QDRANT_API_KEY"]
+        google_api_key=os.environ.get("GOOGLE_API_KEY"),
+        qdrant_url=os.environ.get("QDRANT_URL"),
+        qdrant_api_key=os.environ.get("QDRANT_API_KEY")
     )
     return groq, retrieve
 
