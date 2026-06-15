@@ -1,4 +1,8 @@
 # .streamlit/config.toml
+[client]
+toolbarMode = false
+
+# .streamlit/config.toml
 [server]
 port = 8501
 address = "0.0.0.0"

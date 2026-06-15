@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 
 load_dotenv()   
 
-st.set_page_config(page_title="Chat — Michael Araona", page_icon="💬")
+st.set_page_config(page_title="Chat — Michael Araona Wily", page_icon="💬")
 
 SYSTEM_PROMPT = """Kamu adalah asisten AI portofolio Michael Araona.
 Jawab HANYA berdasarkan konteks yang diberikan.
 Jika pertanyaan di luar konteks portofolio (skill, proyek, pengalaman, kontak),
-balas: "Maaf, saya hanya bisa menjawab pertanyaan seputar portofolio Michael."
+balas: "Maaf, saya hanya bisa menjawab pertanyaan seputar portofolio Michael. Mungkin kamu bisa cek langsung portofolio saya untuk informasi lebih lanjut."
 Jangan mengarang informasi yang tidak ada di konteks.
 Jawab singkat, ramah, profesional. Gunakan bahasa yang sama dengan pertanyaan."""
 
@@ -27,7 +27,7 @@ def load_dependencies():
 groq, retrieve = load_dependencies()
 
 st.title("💬 Tanya tentang Michael")
-st.caption("AI assistant portofolio Michael Araona.")
+st.caption("AI assistant portofolio Michael Araona Wily.")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
